@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 
 int main(int argc, char const *argv[])
 {
@@ -18,8 +18,20 @@ int main(int argc, char const *argv[])
               4) bool (booleano)
               5) char (caractere único, para string é necessário criar array)
               6) size_t (inteiro não negativo, semelhante ao próximo tipo)
-              7) unsigned int (inteiro sem sinal, não negativo)*/
+              7) unsigned int (inteiro sem sinal, não negativo) */
 
-    
+    int x = 0;
+    std::cin >> x;
+    if (x >= 0) {
+        std::cout << "x eh positivo";
+    }
+    else if (x < 0) {
+        std::cout << "x eh negativo";
+    }
+    else {
+        std::cout << "x eh zero";
+    }
+
+    // system("pause");
     return 0;
 }
